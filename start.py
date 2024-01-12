@@ -4,11 +4,7 @@ download(model_repo='OpenLMLab/InternLM-7b', output='/home/xlab-app-center/inter
 
 import os
 
-os.system("cd /home/xlab-app-center")
 os.system("git clone -b v0.1.9  https://github.com/InternLM/xtuner")
-os.system("cd xtuner")
-os.system("pip install -e '.[all]'")
-os.system("cd ..")
 os.system("export MKL_SERVICE_FORCE_INTEL=1")
 os.system("export MKL_THREADING_LAYER='GNU'")
 os.system("mkdir merged")
